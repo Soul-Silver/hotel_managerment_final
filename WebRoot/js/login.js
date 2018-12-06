@@ -22,7 +22,14 @@ $(function() {
         }
       })
       .done(function(data) {
+<<<<<<< HEAD
         console.log(data);
+=======
+        if($.trim(data) == "false") {
+          alert("登录失败!");
+          return;
+        }
+>>>>>>> 7a41f314be0db9302a522d260c5ecf96d7310b2b
         success();
       })
       .fail(function(e) {
